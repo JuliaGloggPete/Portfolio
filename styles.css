@@ -1,17 +1,90 @@
-img{
-    border: 5px ridge lightblue;
-    padding: 4px;
+
+:root{
+    --main-brand-color:#1e81b0;
+
+    
+    --primary-color: #063970;
+    --secondary-color:#e28743 ;
+
+    
+    --light-secondary-color:  #eab676;
+    --text-color: #eeeee4 ;
+    --secondary-text-color:  #76b5c5;
+
+    --tertiery-text-color:#873e23; 
 }
 
-div{
-    font-family:Arial, Helvetica, sans-serif
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: var(--text-color)
+}
+header{
+padding: 100px 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+
+}
+.header_text {
+    width: 850px;
 }
 h1{
-    background-color: lightblue;
-    color: whitesmoke;
-    padding: 4px;
+    font-size: 100px;
+    line-height: 115%;
+}
+h3{
+margin-top: 25px;
+color: var(--secondary-text-color)
+
 }
 
+
+
+.circle {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid var(--main-brand-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.circle img {
+    width: 100%;
+}
+
+nav{
+margin-bottom: 120px;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: var(--text-color)
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -32,6 +105,4 @@ h1{
 
 }
 
-body{ 
 
-color:darkgrey;}
