@@ -4,12 +4,12 @@
 
     
     --primary-color: #063970;
-    --secondary-color:#e28743 ;
+    --secondary-color: #76b5c5;
 
     
     --light-secondary-color:  #eab676;
     --text-color: #eeeee4 ;
-    --secondary-text-color:  #76b5c5;
+    --secondary-text-color:  #eab676;
 
     --tertiery-text-color:#873e23; 
 }
@@ -31,6 +31,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 50px;
+flex-wrap: wrap;
 
 }
 .header_text {
@@ -54,7 +55,9 @@ color: var(--secondary-text-color)
     overflow: hidden;
     border-radius: 50%;
     border: 10px solid var(--main-brand-color);
-
+/* max height och width med viewportwidth vw ge mig chans att behålla formen */
+max-width: 80vw;
+max-height: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,33 +79,80 @@ nav ul{
 }
 
 
-a {
+nav a {
     color: var(--secondary-text-color);
     text-decoration: none;
+    position: relative;
+    padding: 3px;
 
 }
 
 nav a:hover{
-    color: var(--text-color)
-}
-.container {
-    display: flex;
-    flex-direction: column;
+    color: var(--text-color);
 }
 
-.container div{
-   
+nav a::after{
+content: "";
+height: 2px;
+width: 0%;
+background: var(--main-brand-color);
+position: absolute;
+bottom: 0;
+left: 0;
+transition: 150ms ease-in-out;
+
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+
+#toggle_button{
+    display: none;
+}
+
+label[for="toggle_button"] span {
+    display: none;
+}
+
+
+label[for="toggle_button"] span {
+    font-size: 40px;
+}
+
+/*mediaquery*/
+@media(max-width: 800px){
+    h1{
+      font-size: 8vw;
+       text-align: center;
+
+        }
+    h3{
+        text-align: center;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--secondary-color);
     padding: 15px;
-    border: 5px solid lightblue;
-    margin: 2px;
-    align-self: center;
-    width: 450px;
-    height: min-content;
+    border-radius: 0 0 25px 0;
 }
 
-.container div:nth-child(1){
-   align-self: center;
+nav ul {
+display: none;
+flex-direction: column;
+}
+
+#toggle_button:checked ~ ul{
+    display: flex;
+}
+label[for="toggle_button"] span {
+    display: block;
+}
 
 }
+
 
 

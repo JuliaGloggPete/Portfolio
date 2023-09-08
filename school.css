@@ -1,0 +1,20 @@
+.all_logos{
+
+    height: 400px;
+    width: 200px;
+    overflow: hidden;
+   
+    border: 10px solid var(--main-brand-color);
+/* max height och width med viewportwidth vw ge mig chans att behålla formen */
+max-width: 80vw;
+max-height: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.all_logos img{
+    width: 100px;
+    height: 100px;
+    max-width: 60vw;
+max-height: 60vw;
+}
