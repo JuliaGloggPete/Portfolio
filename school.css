@@ -1,20 +1,63 @@
+#school_section{
+    padding: 100px 0;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap-reverse;
+   
+}
+
+ 
+
 .all_logos{
 
     height: 400px;
-    width: 200px;
+    width: 400px;
     overflow: hidden;
    
-    border: 10px solid var(--main-brand-color);
-/* max height och width med viewportwidth vw ge mig chans att behålla formen */
-max-width: 80vw;
+    /*border: 5px solid var(--text-color);
+ max height och width med viewportwidth vw ge mig chans att behålla formen */
+
 max-height: 80vw;
     display: flex;
-    flex-wrap: wrap;
-   
+    align-items: center;
+
+    justify-content: center;
+   flex-wrap: wrap;
 }
+
+.school_container{
+width: 750px;
+max-width: 90%;
+
+}
+.school_container h2{
+    font-size: 80px;
+
+}
+.school_container p { 
+    text-align: justify;
+    line-height: 175%;
+}
+
+
 .all_logos img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+
     max-width: 60vw;
 max-height: 60vw;
+}
+@media (max-width: 800px){
+    .all_logos{
+        visibility:collapse;
+    }
+.school_container h2{
+    text-align: center;
+    
+ 
+}
 }
