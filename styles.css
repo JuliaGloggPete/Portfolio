@@ -1,9 +1,10 @@
+
 :root{
     --main-brand-color:#1e81b0;
 
     
-    --primary-color: #063970;
-    --secondary-color: #76b5c5;
+    --primary-color: #032040;
+    --secondary-color: #063970;
 
     
     --light-secondary-color:  #eab676;
@@ -152,3 +153,6 @@ label[for="toggle_button"] span {
 }
 
 }
+
+
+

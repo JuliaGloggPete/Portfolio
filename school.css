@@ -24,7 +24,7 @@ max-height: 80vw;
     display: flex;
     align-items: center;
 
-    justify-content: center;
+    justify-content:space-around;
    flex-wrap: wrap;
 }
 
@@ -53,11 +53,16 @@ max-height: 60vw;
 }
 @media (max-width: 800px){
     .all_logos{
-        visibility:collapse;
+        visibility: hidden;
     }
 .school_container h2{
     text-align: center;
+font-size: 12vw;
     
  
+}
+#school_section{
+padding: 50px 0;
+
 }
 }

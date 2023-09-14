@@ -1,0 +1,43 @@
+#job_section{
+    padding: 100px 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap-reverse;
+   
+}
+
+ 
+
+.job_container{
+width: 750px;
+max-width: 90%;
+
+}
+.job_container h2{
+    font-size: 80px;
+
+}
+.job_container p { 
+    text-align: justify;
+    line-height: 175%;
+}
+
+
+@media (max-width: 800px){
+    .all_logos{
+        visibility: hidden;
+    }
+.school_container h2{
+    text-align: center;
+font-size: 12vw;
+    
+ 
+}
+#school_section{
+padding: 50px 0;
+
+}
+}

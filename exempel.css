@@ -1,0 +1,61 @@
+#app_exempel_section{
+    padding: 100px 0;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+   
+}
+
+#h2_app{
+    font-size: 80px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-self: center;
+
+}
+.app_exempel_container{
+    width: 750px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-content: center;
+    }
+
+
+
+.app_exempel_container video{
+    width: 12vw;
+   height: 300px;
+    
+
+    max-width: 90%;
+ 
+    }
+    
+    #lakej{
+
+        width: 24vw;
+        height: 300px;
+
+    }
+    
+
+    @media (max-width: 800px){
+      
+        #h2_app{
+        text-align: center;
+    font-size: 12vw;
+        
+     
+    }
+    #app_exempel_section{
+    padding: 50px 0;
+    
+    }
+    }
