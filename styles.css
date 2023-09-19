@@ -25,6 +25,8 @@ body{
     font-size: 20px;
     color: var(--text-color)
 }
+
+
 header{
 padding: 100px 25px;
 display: flex;
@@ -61,7 +63,9 @@ footer{
     
     }
 
-
+.button{
+    background-color: #eab676;
+}
 .circle {
     height: 400px;
     width: 400px;

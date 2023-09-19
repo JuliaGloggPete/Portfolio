@@ -54,6 +54,8 @@ max-height: 60vw;
 @media (max-width: 800px){
     .all_logos{
         visibility: hidden;
+        width: 0px;
+        height: 0px;
     }
 .school_container h2{
     text-align: center;
